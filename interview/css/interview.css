@@ -1,0 +1,364 @@
+.p-interviewChild-mainVisual {
+  position: relative;
+}
+
+.p-interviewChild-mainVisual__slide {
+  position: relative;
+  height: calc(100vw / 640 * 328);
+}
+
+.p-interviewChild-mainVisual__slide__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.p-interviewChild-mainVisual__slide__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-interviewChild-mainVisual__slide__img[data-item="1"] {
+  opacity: 1;
+}
+
+.p-interviewChild-mainVisual__lead {
+  position: absolute;
+  top: calc(100vw / 640 * 25);
+  left: calc(100vw / 640 * 25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.p-interviewChild-mainVisual__lead__text {
+  font-size: calc(100vw / 640 * 30);
+  color: #ffffff;
+  background: linear-gradient(-141deg, #4365de 0%, #209ada 100%);
+  padding: 0 calc(100vw / 640 * 15);
+}
+
+.p-interviewChild-mainVisual__lead__text + .p-interviewChild-mainVisual__lead__text {
+  margin-top: calc(100vw / 640 * 5);
+}
+
+.p-interviewChild-mainVisual__profile {
+  margin-top: calc(100vw / 640 * 40);
+  padding: 0 calc(100vw / 640 * 40);
+}
+
+.p-interviewChild-mainVisual__profile__text {
+  line-height: 1.2;
+}
+
+.p-interviewChild-mainVisual__profile__text + .p-interviewChild-mainVisual__profile__text {
+  margin-top: calc(100vw / 640 * 5);
+}
+
+.p-interviewChild-mainVisual__profile__text[data-type="01"] {
+  font-size: calc(100vw / 640 * 26);
+}
+
+.p-interviewChild-mainVisual__profile__text[data-type="02"] {
+  font-size: calc(100vw / 640 * 52);
+  font-weight: 400;
+}
+
+@media print, (min-width: 768px) {
+  .p-interviewChild-mainVisual__slide {
+    height: calc(100vw / 1400 * 720);
+  }
+  .p-interviewChild-mainVisual__slide__img img {
+    width: auto;
+    height: 100%;
+  }
+  .p-interviewChild-mainVisual__lead {
+    left: calc(100vw / 1400 * 126);
+  }
+  .p-interviewChild-mainVisual__lead__text {
+    font-size: calc(100vw / 1400 * 32);
+    padding: 0 calc(100vw / 1400 * 25);
+  }
+  .p-interviewChild-mainVisual__lead__text + .p-interviewChild-mainVisual__lead__text {
+    margin-top: calc(100vw / 1400 * 10);
+  }
+  .p-interviewChild-mainVisual__profile {
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    left: calc(100vw / 1400 * 126);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .p-interviewChild-mainVisual__profile__text {
+    background: #ffffff;
+    color: #156eec;
+    padding: calc(100vw / 1400 * 3) calc(100vw / 1400 * 16);
+  }
+  .p-interviewChild-mainVisual__profile__text + .p-interviewChild-mainVisual__profile__text {
+    margin-top: calc(100vw / 1400 * 10);
+  }
+  .p-interviewChild-mainVisual__profile__text[data-type="01"] {
+    font-size: calc(100vw / 1400 * 16);
+  }
+  .p-interviewChild-mainVisual__profile__text[data-type="02"] {
+    font-size: calc(100vw / 1400 * 48);
+  }
+  .p-interviewChild-mainVisual[data-page="shimizu"] .p-interviewChild-mainVisual__lead {
+    top: calc(100vw / 1400 * 238);
+  }
+  .p-interviewChild-mainVisual[data-page="shimizu"] .p-interviewChild-mainVisual__profile {
+    top: calc(100vw / 1400 * 430);
+  }
+}
+
+.p-interviewChild-schedule {
+  position: relative;
+}
+
+.p-interviewChild-schedule__bg {
+  width: 100%;
+  height: calc(100vw / 640 * 330);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.p-interviewChild-schedule__bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-interviewChild-schedule__inner {
+  position: relative;
+  padding: 0 calc(100vw / 640 * 40);
+}
+
+.p-interviewChild-schedule__inner__heading {
+  height: calc(100vw / 640 * 330);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.p-interviewChild-schedule__inner__heading__text01 {
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(100vw / 640 * 48);
+  line-height: 1.2;
+  background: linear-gradient(-141deg, #4365de 0%, #209ada 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.p-interviewChild-schedule__inner__heading__text02 {
+  font-size: calc(100vw / 640 * 24);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #177fc3;
+}
+
+.p-interviewChild-schedule__inner__content {
+  margin-top: calc(100vw / 640 * 40);
+  padding-left: calc(100vw / 640 * 20);
+}
+
+.p-interviewChild-schedule__inner__content__list {
+  border-left: 1px solid #177fc3;
+  padding: calc(100vw / 640 * 20) 0 calc(100vw / 640 * 20) calc(100vw / 640 * 40);
+}
+
+.p-interviewChild-schedule__inner__content__list__item + .p-interviewChild-schedule__inner__content__list__item {
+  margin-top: calc(100vw / 640 * 30);
+}
+
+.p-interviewChild-schedule__inner__content__list__item__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(100vw / 640 * 32);
+  font-weight: 300;
+  color: #187fc3;
+  position: relative;
+}
+
+.p-interviewChild-schedule__inner__content__list__item__title::before {
+  content: "";
+  display: block;
+  width: calc(100vw / 640 * 32);
+  height: calc(100vw / 640 * 32);
+  border-radius: 50%;
+  background: #187fc3;
+  position: absolute;
+  top: calc(100vw / 640 * 13);
+  left: calc(100vw / 640 * -57);
+}
+
+.p-interviewChild-schedule__inner__content__list__item__description {
+  font-size: calc(100vw / 640 * 26);
+  color: #187fc3;
+}
+
+@media print, (min-width: 768px) {
+  .p-interviewChild-schedule__inner {
+    min-height: calc(100vw / 1400 * 720);
+    padding: calc(100vw / 1400 * 50) calc(100vw / 1400 * 140);
+  }
+  .p-interviewChild-schedule__inner__heading {
+    height: auto;
+  }
+  .p-interviewChild-schedule__inner__heading__text01 {
+    font-size: calc(100vw / 1400 * 40);
+  }
+  .p-interviewChild-schedule__inner__heading__text02 {
+    font-size: calc(100vw / 1400 * 18);
+  }
+  .p-interviewChild-schedule__inner__content {
+    margin-top: calc(100vw / 1400 * 35);
+    padding-left: calc(100vw / 1400 * 55);
+    height: calc(100vw / 1400 * 520);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .p-interviewChild-schedule__inner__content::-webkit-scrollbar {
+    display: none;
+  }
+  .p-interviewChild-schedule__inner__content__list {
+    padding: calc(100vw / 1400 * 20) 0 calc(100vw / 1400 * 20) calc(100vw / 1400 * 40);
+  }
+  .p-interviewChild-schedule__inner__content__list__item + .p-interviewChild-schedule__inner__content__list__item {
+    margin-top: calc(100vw / 1400 * 20);
+  }
+  .p-interviewChild-schedule__inner__content__list__item__title {
+    font-size: calc(100vw / 1400 * 18);
+  }
+  .p-interviewChild-schedule__inner__content__list__item__title::before {
+    width: calc(100vw / 1400 * 16);
+    height: calc(100vw / 1400 * 16);
+    top: calc(100vw / 1400 * 10);
+    left: calc(100vw / 1400 * -48);
+  }
+  .p-interviewChild-schedule__inner__content__list__item__description {
+    font-size: calc(100vw / 1400 * 18);
+    line-height: 1.4;
+  }
+}
+
+@media screen\0 {
+  .p-interviewChild-schedule__inner__heading__text01 {
+    background: none;
+    color: #187fc3;
+  }
+}
+
+.p-interviewChild-section {
+  background-image: url("/recruit/interview/image/interview01/bg_01.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.p-interviewChild-section__inner {
+  padding: calc(100vw / 640 * 40);
+}
+
+.p-interviewChild-section__inner__img {
+  margin-top: calc(100vw / 640 * 40);
+}
+
+.p-interviewChild-section__inner[data-type="03"] .p-interviewChild-section__inner__img {
+  margin-top: calc(100vw / 640 * 80);
+  position: relative;
+}
+
+.p-interviewChild-section__inner[data-type="03"] .p-interviewChild-section__inner__img__bg {
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(33deg, #43cade 0%, #209ada 100%);
+  position: absolute;
+  top: calc(100vw / 640 * -40);
+  right: calc(100vw / 640 * -40);
+}
+
+.p-interviewChild-section__inner[data-type="03"] .p-interviewChild-section__inner__img__inner {
+  position: relative;
+}
+
+.p-interviewChild-section[data-item="1"] {
+  margin-top: calc(100vw / 640 * 48);
+}
+
+.p-interviewChild-section[data-type="02"] {
+  background-image: url("/recruit/interview/image/interview01/bg_02.png");
+  position: relative;
+}
+
+.p-interviewChild-section[data-type="02"]::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(33deg, #43cade 0%, #209ada 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+@media print, (min-width: 768px) {
+  .p-interviewChild-section {
+    background-size: cover;
+    background-position: center;
+  }
+  .p-interviewChild-section__inner {
+    padding: calc(100vw / 1400 * 100) calc(100vw / 1400 * 50) calc(100vw / 1400 * 100) calc(100vw / 1400 * 140);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .p-interviewChild-section__inner__content {
+    width: calc(100vw / 1400 * 520);
+  }
+  .p-interviewChild-section__inner__img {
+    margin-top: 0;
+    width: calc(100vw / 1400 * 600);
+  }
+  .p-interviewChild-section__inner[data-type="02"] {
+    padding: calc(100vw / 1400 * 100) calc(100vw / 1400 * 140) 0;
+  }
+  .p-interviewChild-section__inner[data-type="02"] .p-interviewChild-section__inner__content {
+    width: 100%;
+  }
+  .p-interviewChild-section__inner[data-type="03"] {
+    padding-top: 0;
+    padding-right: calc(100vw / 1400 * 80);
+  }
+  .p-interviewChild-section__inner[data-type="03"] .p-interviewChild-section__inner__img {
+    margin-top: calc(100vw / 1400 * 124);
+  }
+  .p-interviewChild-section__inner[data-type="03"] .p-interviewChild-section__inner__img__bg {
+    top: calc(100vw / 1400 * -80);
+    right: calc(100vw / 1400 * -80);
+  }
+  .p-interviewChild-section[data-item="1"] {
+    margin-top: 0;
+  }
+  .p-interviewChild-section[data-type="02"] .p-interviewChild-section__inner {
+    padding: calc(100vw / 1400 * 100) calc(100vw / 1400 * 140) calc(100vw / 1400 * 100) calc(100vw / 1400 * 84);
+    flex-direction: row-reverse;
+  }
+  .p-interviewChild-section[data-type="03"] {
+    background-size: contain;
+    background-position: top;
+  }
+}
