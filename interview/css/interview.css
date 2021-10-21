@@ -52,9 +52,7 @@
   margin-top: calc(100vw / 640 * 40);
   padding: 0 calc(100vw / 640 * 40);
 }
-.p-interviewChild-mainVisual__right{
-  left: 50%;
-}
+
 .p-interviewChild-mainVisual__profile__text {
   line-height: 1.2;
 }
@@ -71,9 +69,6 @@
   font-size: calc(100vw / 640 * 52);
   font-weight: 400;
 }
-.p-interviewChild-mainVisual__right .p-interviewChild-mainVisual__lead__text {
-  font-size: calc(80vw / 640 * 30);
-}
 @media print, (min-width: 768px) {
   .p-interviewChild-mainVisual__slide {
     height: calc(100vw / 1400 * 720);
@@ -85,18 +80,12 @@
   .p-interviewChild-mainVisual__lead {
     left: calc(100vw / 1400 * 126);
   }
-  .p-interviewChild-mainVisual__right{
-    left: 50%;
-  }
   .p-interviewChild-mainVisual__lead__text {
     font-size: calc(100vw / 1400 * 32);
     padding: 0 calc(100vw / 1400 * 25);
   }
   .p-interviewChild-mainVisual__lead__text + .p-interviewChild-mainVisual__lead__text {
     margin-top: calc(100vw / 1400 * 10);
-  }
-  .p-interviewChild-mainVisual__right .p-interviewChild-mainVisual__lead__text {
-    font-size: calc(100vw / 1400 * 32);
   }
   .p-interviewChild-mainVisual__profile {
     margin-top: 0;
@@ -106,10 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .p-interviewChild-mainVisual__profile--right{
-    left: 65%;
-  }
+  } 
   .p-interviewChild-mainVisual__profile__text {
     background: #ffffff;
     color: #156eec;
